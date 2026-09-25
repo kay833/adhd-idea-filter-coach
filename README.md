@@ -26,6 +26,10 @@ Five questions, one at a time, adapted to how much detail you need:
 
 Then one clear verdict, defended in your own words, not a vague maybe.
 
+When the verdict has a future decision point, the skill puts it on your **Back Burner**. If your AI has access to your calendar, it can create the right follow-up event: a review date for **NOT NOW**, an evidence review for **SMALLER TEST**, a first-action checkpoint for **YES**, or a delegation follow-up for **DELEGATE**. A **NO** stays closed unless you explicitly choose a condition that would make it worth revisiting.
+
+Without calendar access, it gives you the exact event title, date, and description to paste into any calendar.
+
 ## More like this
 
 This is one piece of [KayOS](https://github.com/kay833/ai-operating-system-installer) — a provider-neutral way to give your AI durable context and skills. This skill will eventually move into that installer as it matures.
