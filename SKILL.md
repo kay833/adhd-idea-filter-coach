@@ -1,6 +1,6 @@
 ---
 name: adhd-idea-filter-coach
-description: Guides the user through a five-question interview and gives one clear verdict (yes, no, not now, delegate, or smaller test) on whether to pursue a meaningful new project, pivot, offer, or other idea with real time, money, attention, or identity stakes. Use when the user explicitly asks whether to pursue an idea, asks for help deciding, or asks to run the idea filter. Do not invoke for brainstorming, execution help, ordinary factual choices, or high-stakes medical, legal, or financial decisions.
+description: Guides the user through a five-question interview, gives one clear verdict (yes, no, not now, delegate, or smaller test), and turns any future decision point into a Back Burner calendar event when calendar access is available. Use when the user explicitly asks whether to pursue an idea, asks for help deciding, or asks to run the idea filter. Do not invoke for brainstorming, execution help, ordinary factual choices, or high-stakes medical, legal, or financial decisions.
 ---
 
 # ADHD Idea Filter Coach
@@ -83,6 +83,28 @@ Return the decision in this compact format:
 
 **Review trigger:** Include only for NOT NOW or when a test produces a later decision point.
 
+## Put the decision on the Back Burner
+
+After giving the verdict, turn the next decision point into a concrete calendar event when one is useful. Do not use a generic delay. Choose the date from the user's answers: the time needed for excitement to cool, a test to finish, capacity to change, evidence to arrive, or a delegation handoff to occur.
+
+Use the verdict to decide what belongs on the calendar:
+
+- **YES:** Schedule the first bounded action or an early commitment checkpoint. Do not create a fake reconsideration date for a decision the user already made.
+- **NO:** Create no event by default. A no should close the loop, not schedule the idea to return. Only create a reminder if the user explicitly asks or names a specific condition that could make the answer different.
+- **NOT NOW:** Create a Back Burner review event on the agreed date. Preserve the idea, why it mattered, the current reason for waiting, and what would need to be different for a yes.
+- **DELEGATE:** Schedule a follow-up to confirm that a named person accepted ownership and the handoff actually happened.
+- **SMALLER TEST:** Schedule the evidence review for the end of the test. Include the success threshold chosen before the test begins.
+
+Resolve relative timing such as “in three weeks” to an absolute date in the user's timezone. If the user named only a condition, agree on a date to check whether that condition has happened. Ask one short question if the date, timezone, or event time cannot be inferred safely.
+
+Use this event shape:
+
+- **Title:** `Back Burner Review: [idea]` for NOT NOW or SMALLER TEST; use a plain action title for YES or DELEGATE.
+- **When:** The agreed absolute date and time. Prefer a short scheduled block over an all-day event unless the user prefers all-day reminders.
+- **Description:** Original idea; verdict; why it mattered; why this timing was chosen; what evidence or changed condition to review; what the current decision protects.
+
+If a connected calendar tool is available, present the proposed title and date, then obtain any confirmation required by the host before creating the event. Create it only in the user's intended calendar and verify the saved event details. If calendar access is unavailable, say so plainly and provide the exact event title, date, and description for the user to paste into any calendar. Never claim an event was created without tool confirmation.
+
 ## Repeated ideas
 
 If the same idea returns after a prior NOT NOW verdict, first ask what has materially changed in timing, capacity, fit, evidence, or displacement.
@@ -97,3 +119,4 @@ If the same idea returns after a prior NOT NOW verdict, first ask what has mater
 - Preserve curiosity. An idea can matter without becoming a project.
 - Never turn all five questions into one wall of text.
 - Do not drift from decision support into building the idea unless the user asks to proceed after the verdict.
+- Do not create recurring reminders or keep a NO alive by default.
